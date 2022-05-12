@@ -22,6 +22,7 @@ end
   Book.create(title: Faker::Book.title,
               author: Faker::Book.author,
               genre: Faker::Book.genre,
+              description: Faker::Lorem.sentence,
               isbn: Faker::Number.number(digits: 10),
               publisher: Faker::Book.publisher,
               user: User.find(Random.rand(1..50)))
